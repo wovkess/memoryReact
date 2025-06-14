@@ -187,3 +187,59 @@ main{
 	background-color: #a153fa;
 	cursor: pointer;
 }
+
+
+@media (max-width: 900px) {
+	.card{
+		width: 100px;
+		height: 100px;
+	}
+	main{
+		gap: 10px;
+	}
+	.header-item{
+		width: 140px;
+		height: 30px;
+	}
+	.item-icon{
+		width: 45px;
+		height: 45px;
+		left: -10px;
+		top: -6px;
+	}
+	.item-icon img{
+		width: 25px;
+		height: 25px;
+	}
+	.item-info{
+		height: 30px;
+		font-size: 14px;
+		padding-left: 50px;
+	}
+
+	header{
+		justify-content: center;
+	}
+}
+@media (max-width: 580px){
+	main{
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-rows: repeat(5, 1fr);
+		max-width: 215px;
+		width: 100%;
+	}
+	#app {
+		display: flex;
+		justify-content: center;
+		flex-wrap: wrap;
+	}
+	header{
+		flex-wrap: wrap;
+		height: fit-content !important;
+		row-gap: 20px;
+	}
+	body{
+		align-items: flex-start;
+		min-height: 100%;
+	}
+}
