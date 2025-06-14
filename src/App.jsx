@@ -30,13 +30,6 @@ const App = () => {
     }
   }, [cards])
 
-  // useEffect(() => {
-  //   if (gameWon){
-  //     alert('Вы победили!')
-  //   }
-  // }, [gameWon])
-
-
   // таймер
   useEffect(() => {
     let interval
